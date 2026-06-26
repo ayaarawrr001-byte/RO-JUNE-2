@@ -3473,15 +3473,15 @@
                 <div class="adventure-info-card">
                     <div class="info-label">WILAYAH</div>
                     <div class="info-main">
-                        <img src="https://raw.githubusercontent.com/riyanarahman320/26/main/BANDUNG.png" alt="Wilayah Jawa Barat" class="adventure-mini-image">
-                        <span id="adventure-region-name" class="info-value">Jawa Barat</span>
+                        <img id="adventure-region-image" src="https://raw.githubusercontent.com/riyanarahman320/26/main/BANDUNG.png" alt="Wilayah" class="adventure-mini-image">
+                        <span id="adventure-region-name" class="info-value">Wilayah</span>
                     </div>
                 </div>
                 <div class="adventure-info-card">
                     <div class="info-label">ALAT MUSIK</div>
                     <div class="info-main">
-                        <img src="https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/2316af59054f31128ec8fb930243ec71875b4051/Hijau%20dan%20Biru%20Warna-warni%20Lucu%20Ilustrasi%20Alam%20Doa%20Masuk%20Rumah%20A4%20Dokumen%20(Logo).png" alt="Alat Musik Angklung" class="adventure-mini-image">
-                        <span id="adventure-instrument-name" class="info-value">Angklung</span>
+                        <img id="adventure-instrument-image" src="https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/2316af59054f31128ec8fb930243ec71875b4051/Hijau%20dan%20Biru%20Warna-warni%20Lucu%20Ilustrasi%20Alam%20Doa%20Masuk%20Rumah%20A4%20Dokumen%20(Logo).png" alt="Alat Musik" class="adventure-mini-image">
+                        <span id="adventure-instrument-name" class="info-value">Alat Musik</span>
                     </div>
                 </div>
             </div>
@@ -3614,7 +3614,6 @@
 
         const cityData = [
             { name: "Mulai", side: "corner", music: "", image: "https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/97f64b824060ad5de91364c00c041a9c748660bd/contoh%20(4).png" },
-            { name: "Jawa Barat", side: "side-top", music: "https://raw.githubusercontent.com/riyanarahman320/c2FraXQgdGF1dSwgZ2EgYWRpbCByYXNhbnlh/b7a423f967be69ca19239d650b05b841ddcb5158/Manuk%20Dadali%20(Angklung%20version%20cover)%20Arr%20(mp3cut.net).mp3", image: "https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/97f64b824060ad5de91364c00c041a9c748660bd/contoh%20(4).png" },
             { name: "Nusa Tenggara Timur", side: "side-top", music: "https://raw.githubusercontent.com/riyanarahman320/c2FraXQgdGF1dSwgZ2EgYWRpbCByYXNhbnlh/b7a423f967be69ca19239d650b05b841ddcb5158/GAMELAN.mp3", image: "https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/97f64b824060ad5de91364c00c041a9c748660bd/contoh%20(4).png" },
             { name: "Aceh", side: "side-top", image: "https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/97f64b824060ad5de91364c00c041a9c748660bd/contoh%20(4).png" },
             { name: "Sulawesi Utara", side: "corner", image: "https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/97f64b824060ad5de91364c00c041a9c748660bd/contoh%20(4).png" },
@@ -3629,44 +3628,45 @@
             { name: "Sumatera Barat", side: "side-left", music: "", image: "https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/97f64b824060ad5de91364c00c041a9c748660bd/contoh%20(4).png" },
             { name: "Sumatera Selatan", side: "side-left", music: "", image: "https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/97f64b824060ad5de91364c00c041a9c748660bd/contoh%20(4).png" },
             { name: "Bali", side: "side-left", image: "https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/97f64b824060ad5de91364c00c041a9c748660bd/contoh%20(4).png" },
+            { name: "Jawa Barat", side: "side-top", music: "https://raw.githubusercontent.com/riyanarahman320/c2FraXQgdGF1dSwgZ2EgYWRpbCByYXNhbnlh/b7a423f967be69ca19239d650b05b841ddcb5158/Manuk%20Dadali%20(Angklung%20version%20cover)%20Arr%20(mp3cut.net).mp3", image: "https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/97f64b824060ad5de91364c00c041a9c748660bd/contoh%20(4).png" },
         ];
 
         const cityQuestions = {
-            1: { q: "Musik orkestra Betawi yang dipengaruhi budaya Eropa dan menggunakan alat musik tiup logam disebut?", a: ["Tanjidor", "Gambang Kromong", "Keroncong", "Marawis"], correct: 0 },
-            2: { q: "Alat musik bambu asal Jawa Barat yang dimainkan dengan cara digoyangkan adalah?", a: ["Angklung", "Calung", "Suling", "Kecapi"], correct: 0 },
-            3: { q: "Genre musik khas Cirebon-Indramayu yang namanya singkatan dari 'Gitar' dan 'Suling' adalah?", a: ["Tarling", "Degung", "Sindenan", "Tayub"], correct: 0 },
-            4: { q: "Ansambel musik tradisional Jawa yang didominasi metalofon dan gong disebut?", a: ["Gamelan", "Kulintang", "Talempong", "Sasando"], correct: 0 },
-            5: { q: "Aliran musik yang menggunakan instrumen flute, biola, dan cak-cuk (ukulele) yang populer di Solo adalah?", a: ["Keroncong", "Campursari", "Dangdut", "Langgam"], correct: 0 },
-            6: { q: "Kesenian drama tradisional Jawa Timur yang diiringi musik gamelan bertempo cepat disebut?", a: ["Ludruk", "Ketoprak", "Wayang Orang", "Lenong"], correct: 0 },
-            7: { q: "Musik vokal laki-laki di Bali yang menirukan suara instrumen gamelan tanpa alat musik disebut?", a: ["Kecak", "Jegog", "Genggong", "Barong"], correct: 0 },
-            8: { q: "Alat musik tiup tradisional dari pelepah pohon enau yang ditarik talinya, khas suku Sasak Lombok?", a: ["Genggong", "Seruling", "Nafiri", "Saronen"], correct: 0 },
-            9: { q: "Musik perkusi yang mengiringi tarian komedi penuh energi asal Sulawesi Selatan disebut?", a: ["Gandrang Bulo", "Sinrilik", "Pakarena", "Kacaping"], correct: 0 },
-            10: { q: "Alat musik perkusi kayu yang dipukul dan disusun rapi, khas suku Minahasa di Manado?", a: ["Kolintang", "Gendang", "Tifa", "Rebana"], correct: 0 },
-            11: { q: "Ambon dijuluki 'City of Music'. Alat musik pukul utama yang terbuat dari kayu bulat dan kulit binatang adalah?", a: ["Tifa", "Jimbe", "Bongo", "Bedug"], correct: 0 },
-            12: { q: "Musik religi di Ternate yang menggunakan rebana untuk mengiringi puji-pujian disebut?", a: ["Hadrah", "Samrah", "Qasidah", "Zapin"], correct: 0 },
-            13: { q: "Alat musik petik khas suku Dayak yang bentuk dasarnya mirip gitar tanpa fret adalah?", a: ["Sampe", "Sasando", "Jentreng", "Kecapi"], correct: 0 },
-            14: { q: "Musik khas Kalimantan yang menggunakan alat musik pukul dari logam mirip gamelan disebut?", a: ["Kliningan", "Talempong", "Gamelan Banjar", "Karungut"], correct: 2 },
-            15: { q: "Kesenian Aceh yang memadukan vokal, tepuk tangan, dan bantal kecil sebagai perkusi disebut?", a: ["Didong", "Saman", "Seudati", "Rapa'i"], correct: 0 }
+            1: { q: "Alat musik bambu asal Jawa Barat yang dimainkan dengan cara digoyangkan adalah?", a: ["Angklung", "Calung", "Suling", "Kecapi"], correct: 0 },
+            2: { q: "Genre musik khas Cirebon-Indramayu yang namanya singkatan dari 'Gitar' dan 'Suling' adalah?", a: ["Tarling", "Degung", "Sindenan", "Tayub"], correct: 0 },
+            3: { q: "Ansambel musik tradisional Jawa yang didominasi metalofon dan gong disebut?", a: ["Gamelan", "Kulintang", "Talempong", "Sasando"], correct: 0 },
+            4: { q: "Aliran musik yang menggunakan instrumen flute, biola, dan cak-cuk (ukulele) yang populer di Solo adalah?", a: ["Keroncong", "Campursari", "Dangdut", "Langgam"], correct: 0 },
+            5: { q: "Kesenian drama tradisional Jawa Timur yang diiringi musik gamelan bertempo cepat disebut?", a: ["Ludruk", "Ketoprak", "Wayang Orang", "Lenong"], correct: 0 },
+            6: { q: "Musik vokal laki-laki di Bali yang menirukan suara instrumen gamelan tanpa alat musik disebut?", a: ["Kecak", "Jegog", "Genggong", "Barong"], correct: 0 },
+            7: { q: "Alat musik tiup tradisional dari pelepah pohon enau yang ditarik talinya, khas suku Sasak Lombok?", a: ["Genggong", "Seruling", "Nafiri", "Saronen"], correct: 0 },
+            8: { q: "Musik perkusi yang mengiringi tarian komedi penuh energi asal Sulawesi Selatan disebut?", a: ["Gandrang Bulo", "Sinrilik", "Pakarena", "Kacaping"], correct: 0 },
+            9: { q: "Alat musik perkusi kayu yang dipukul dan disusun rapi, khas suku Minahasa di Manado?", a: ["Kolintang", "Gendang", "Tifa", "Rebana"], correct: 0 },
+            10: { q: "Ambon dijuluki 'City of Music'. Alat musik pukul utama yang terbuat dari kayu bulat dan kulit binatang adalah?", a: ["Tifa", "Jimbe", "Bongo", "Bedug"], correct: 0 },
+            11: { q: "Musik religi di Ternate yang menggunakan rebana untuk mengiringi puji-pujian disebut?", a: ["Hadrah", "Samrah", "Qasidah", "Zapin"], correct: 0 },
+            12: { q: "Alat musik petik khas suku Dayak yang bentuk dasarnya mirip gitar tanpa fret adalah?", a: ["Sampe", "Sasando", "Jentreng", "Kecapi"], correct: 0 },
+            13: { q: "Musik khas Kalimantan yang menggunakan alat musik pukul dari logam mirip gamelan disebut?", a: ["Kliningan", "Talempong", "Gamelan Banjar", "Karungut"], correct: 2 },
+            14: { q: "Kesenian Aceh yang memadukan vokal, tepuk tangan, dan bantal kecil sebagai perkusi disebut?", a: ["Didong", "Saman", "Seudati", "Rapa'i"], correct: 0 },
+            15: { q: "Musik orkestra Betawi yang dipengaruhi budaya Eropa dan menggunakan alat musik tiup logam disebut?", a: ["Tanjidor", "Gambang Kromong", "Keroncong", "Marawis"], correct: 0 }
         };
 
         const adventureTiles = new Set(Array.from({ length: cityData.length - 1 }, (_, i) => i + 1));
         let nextAreaAction = 'adventure';
         const instrumentMap = {
-            1: { name: 'Angklung', icon: '🎶', image: 'https://raw.githubusercontent.com/lorrainemydth-gif/MEDIA-RO/c98900fd489d86e38153e06b1ea237685d260695/angklung%20(1).png', options: ['🎶','🥁','🎸','🎻'] },
-            2: { name: 'Gamelan', icon: '🎼', options: ['🎼','🎸','🎤','🥁'] },
-            3: { name: 'Suling', icon: '🎵', options: ['🎵','🎸','🎼','🥁'] },
-            4: { name: 'Sitar', icon: '🎸', options: ['🎸','🎵','🥁','🎼'] },
-            5: { name: 'Keroncong', icon: '🎻', options: ['🎻','🎼','🎸','🎵'] },
-            6: { name: 'Gendang', icon: '🥁', options: ['🥁','🎸','🎵','🎼'] },
-            7: { name: 'Kecak', icon: '🗣️', options: ['🗣️','🎸','🥁','🎼'] },
-            8: { name: 'Genggong', icon: '🎶', options: ['🎶','🎻','🥁','🎼'] },
-            9: { name: 'Gandrang', icon: '🥁', options: ['🥁','🎸','🎵','🎼'] },
-            10: { name: 'Kolintang', icon: '🥁', options: ['🥁','🎻','🎵','🎸'] },
-            11: { name: 'Tifa', icon: '🥁', options: ['🥁','🎤','🎼','🎸'] },
-            12: { name: 'Rebana', icon: '🥁', options: ['🥁','🎵','🎸','🎼'] },
-            13: { name: 'Sampe', icon: '🪕', options: ['🪕','🎼','🥁','🎸'] },
-            14: { name: 'Talempong', icon: '🥁', options: ['🥁','🎵','🎼','🎸'] },
-            15: { name: 'Tifa', icon: '🥁', options: ['🥁','🎼','🎸','🎵'] }
+            1: { name: 'Gamelan', icon: '🎼', options: ['🎼','🎸','🎤','🥁'] },
+            2: { name: 'Suling', icon: '🎵', options: ['🎵','🎸','🎼','🥁'] },
+            3: { name: 'Sitar', icon: '🎸', options: ['🎸','🎵','🥁','🎼'] },
+            4: { name: 'Keroncong', icon: '🎻', options: ['🎻','🎼','🎸','🎵'] },
+            5: { name: 'Gendang', icon: '🥁', options: ['🥁','🎸','🎵','🎼'] },
+            6: { name: 'Kecak', icon: '🗣️', options: ['🗣️','🎸','🥁','🎼'] },
+            7: { name: 'Genggong', icon: '🎶', options: ['🎶','🎻','🥁','🎼'] },
+            8: { name: 'Gandrang', icon: '🥁', options: ['🥁','🎸','🎵','🎼'] },
+            9: { name: 'Kolintang', icon: '🥁', options: ['🥁','🎻','🎵','🎸'] },
+            10: { name: 'Tifa', icon: '🥁', options: ['🥁','🎤','🎼','🎸'] },
+            11: { name: 'Rebana', icon: '🥁', options: ['🥁','🎵','🎸','🎼'] },
+            12: { name: 'Sampe', icon: '🪕', options: ['🪕','🎼','🥁','🎸'] },
+            13: { name: 'Talempong', icon: '🥁', options: ['🥁','🎵','🎼','🎸'] },
+            14: { name: 'Tifa', icon: '🥁', options: ['🥁','🎼','🎸','🎵'] },
+            15: { name: 'Angklung', icon: '🎶', image: 'https://raw.githubusercontent.com/lorrainemydth-gif/MEDIA-RO/c98900fd489d86e38153e06b1ea237685d260695/angklung%20(1).png', options: ['🎶','🥁','🎸','🎻'] }
         };
         const adventureState = {
             running: false,
@@ -4397,21 +4397,21 @@
         function showRegionNotification() {
             const city = cityData[state.idx];
             const descriptions = {
-                1: "Musik tradisional Jawa Barat kaya dengan alat musik bambu yang indah.",
-                2: "Nusa Tenggara Timur memiliki warisan musik gamelan yang kaya.",
-                3: "Aceh terkenal dengan musik dan alat musik tradisional yang unik.",
-                4: "Sulawesi Utara memiliki tradisi musik yang megah dan penuh energi.",
-                5: "Maluku dikenal sebagai pusat kerajinan dan musik tradisional.",
-                6: "Kepulauan Riau memiliki musik tradisional yang dinamis.",
-                7: "Sumatera Utara kaya akan warisan musik tradisional yang beragam.",
-                8: "Kalimantan Barat memiliki musik tradisional yang unik dan menarik.",
-                9: "Sulawesi Selatan / Toraja terkenal dengan tradisi musik yang megah.",
-                10: "Lampung memiliki musik tradisional yang penuh makna budaya.",
-                11: "Jawa Timur dikenal dengan musik tradisional yang lembut dan indah.",
-                12: "Jambi memiliki warisan musik tradisional yang kaya.",
-                13: "Sumatera Barat terkenal dengan musik tradisional yang energik.",
-                14: "Sumatera Selatan memiliki musik tradisional yang penuh warna.",
-                15: "Bali terkenal dengan musik kecak dan gamelan yang ekspresif."
+                1: "Nusa Tenggara Timur memiliki warisan musik gamelan yang kaya.",
+                2: "Aceh terkenal dengan musik dan alat musik tradisional yang unik.",
+                3: "Sulawesi Utara memiliki tradisi musik yang megah dan penuh energi.",
+                4: "Maluku dikenal sebagai pusat kerajinan dan musik tradisional.",
+                5: "Kepulauan Riau memiliki musik tradisional yang dinamis.",
+                6: "Sumatera Utara kaya akan warisan musik tradisional yang beragam.",
+                7: "Kalimantan Barat memiliki musik tradisional yang unik dan menarik.",
+                8: "Sulawesi Selatan / Toraja terkenal dengan tradisi musik yang megah.",
+                9: "Lampung memiliki musik tradisional yang penuh makna budaya.",
+                10: "Jawa Timur dikenal dengan musik tradisional yang lembut dan indah.",
+                11: "Jambi memiliki warisan musik tradisional yang kaya.",
+                12: "Sumatera Barat terkenal dengan musik tradisional yang energik.",
+                13: "Sumatera Selatan memiliki musik tradisional yang penuh warna.",
+                14: "Bali terkenal dengan musik kecak dan gamelan yang ekspresif.",
+                15: "Musik tradisional Jawa Barat kaya dengan alat musik bambu yang indah."
             };
 
             const regionOverlay = document.getElementById('region-notification-overlay');
@@ -4444,8 +4444,13 @@
             adventureState.correctInstrument = instrument;
             
             // Update info cards
-            document.getElementById('adventure-region-name').innerText = cityData[state.idx].name;
+            const region = cityData[state.idx];
+            document.getElementById('adventure-region-name').innerText = region.name;
+            document.getElementById('adventure-region-image').src = region.image || DEFAULT_PREVIEW_IMAGE;
+            document.getElementById('adventure-region-image').alt = `Wilayah ${region.name}`;
             document.getElementById('adventure-instrument-name').innerText = `${instrument.icon} ${instrument.name}`;
+            document.getElementById('adventure-instrument-image').src = instrument.image || 'https://raw.githubusercontent.com/lesmanaalit85-oss/resonance-odyssey/2316af59054f31128ec8fb930243ec71875b4051/Hijau%20dan%20Biru%20Warna-warni%20Lucu%20Ilustrasi%20Alam%20Doa%20Masuk%20Rumah%20A4%20Dokumen%20(Logo).png';
+            document.getElementById('adventure-instrument-image').alt = `Alat Musik ${instrument.name}`;
             
             // Update instruction
             document.getElementById('adventure-instruction').innerText = '';
