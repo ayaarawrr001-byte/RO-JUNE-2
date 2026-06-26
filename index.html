@@ -1552,7 +1552,7 @@
         }
 
         #quiz-cards-overlay .cards-container .card {
-            justify-content: center;
+            justify-content: flex-start;
         }
 
         #quiz-cards-overlay .card-title {
@@ -1563,12 +1563,19 @@
             text-align: center;
         }
 
-        #quiz-cards-overlay .card-content {
+        #quiz-cards-overlay .description-card .card-content {
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+
+        #quiz-cards-overlay .question-card .card-content {
+            text-align: left;
+            display: block;
+            justify-content: flex-start;
+            align-items: stretch;
         }
 
         #quiz-cards-overlay .card-content p {
